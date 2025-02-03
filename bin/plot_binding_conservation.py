@@ -42,7 +42,7 @@ def get_colors_cmap(values, label):
 
     # Add colorbar
     cbar = plt.colorbar(sm, orientation='horizontal', ax=ax)
-    cbar.set_label("label")
+    cbar.set_label(f'{label} binding score')
 
     plt.savefig(f'./colorbar_{label}.pdf')
 
@@ -167,7 +167,7 @@ for link3, link4 in zip(links3, links4):
     gv.add_link(link3, link4, curve=True) # mouse vs rat
 
 
-gv.savefig(f"{mirna}_CMTM6_species.png")
+gv.savefig(f"{mirna}_CMTM6_species.pdf")
 
 ### plot the miRNA binding sites for hsa-miR-642b-3p
 species_list = ['mouse', 'rat','human']
@@ -225,4 +225,4 @@ for link3, link4 in zip(links3, links4):
     gv.add_link(link3, link4, curve=True) # mouse vs rat
 
 
-gv.savefig(f"{mirna}_CMTM6_species.png")
+gv.savefig(f"{mirna}_CMTM6_species.pdf")
