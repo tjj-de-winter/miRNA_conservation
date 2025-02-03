@@ -159,7 +159,6 @@ links2 = get_links('human', 'rat', name_dict)
 links3 = get_links('rat', 'mouse', name_dict)
 links4 = get_links('mouse', 'rat', name_dict)
 
-print(links1)
 for link1, link2 in zip(links1, links2): 
     gv.add_link(link1, link2, curve=True) # human vs rat
     
@@ -217,7 +216,6 @@ links2 = get_links('human', 'rat', name_dict)
 links3 = get_links('rat', 'mouse', name_dict)
 links4 = get_links('mouse', 'rat', name_dict)
 
-print(links1)
 for link1, link2 in zip(links1, links2): 
     gv.add_link(link1, link2, curve=True) # human vs rat
     
