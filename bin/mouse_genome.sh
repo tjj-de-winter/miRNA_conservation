@@ -10,10 +10,10 @@ mkdir -p $folder
 cd $folder
 
 # Download GTF file
-# wget $gtf_link
+wget $gtf_link
 
 # Download FASTA file
-# wget $fasta_link
+wget $fasta_link
 
 fasta=$(basename $fasta_link)
 fasta=${fasta%.gz}
